@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    password: 'zaq1@WSX3'
+    username: root
+    url: jdbc:mysql://localhost:3306/enigma?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+token:
+  refreshTokenExpirationMs: '604800000'
+  accessTokenExpirationMs: '900000'
+  refreshTokenCookieName: jwt
+  secretKey: 5267556B58703273357638792F423F4528482B4D6251655368566D5971337436
+logging.level.org.springframework.security: DEBUG
